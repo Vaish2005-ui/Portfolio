@@ -1,0 +1,62 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+out/
+*.log
+
+# Environment variables
+.env
+.env.*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+.history/
+
+# Dependency directories
+bower_components/
+jspm_packages/
+
+# Misc
+*.sublime-workspace
+*.sublime-project
+.idea/
+*.swp
+*.tmp
+*.bak
+*.orig
+*.pid
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# Parcel-bundler cache
+.cache/
+
+# Next.js build output
+.next/
+
+# SvelteKit build output
+.svelte-kit/
+
+# React Native
+.expo/
+
+# Storybook build outputs
+.out/
+.storybook-out/

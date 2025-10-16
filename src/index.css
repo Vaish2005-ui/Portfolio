@@ -1,0 +1,43 @@
+/* src/index.css
+This file imports Tailwind CSS and sets global base styles.
+*/
+
+/* Import Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+html {
+	scroll-behavior: smooth;
+}
+body {
+	/*Use the 'Inter' font family */
+	font-family: 'Inter', sans-serif;
+	/* Set a dark background and ensure smooth scrolling for navigation links */
+	background-color: #030712; /* A dark gray/black matching the theme */
+	color: #f3f4f6; /* Light text color */
+}
+}
+
+/* Custom CSS for the smooth animation on the Hero Section */
+@keyframes slide-up-fade {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.animate-slide-up-fade {
+animation: slide-up-fade 1.5s ease-out forwards;
+}
+
+/* Ensure images don't cause layout issues on drag/selection */
+img {
+user-select: none;
+}
